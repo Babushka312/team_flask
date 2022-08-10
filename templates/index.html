@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    {% for post in posts %}
+        <hl>{{post.title}}</hl>
+        <p>{{post.description}}</p>
+        <p>{{post.date}}</p>
+    {% endfor %}
 </body>
 </html>
